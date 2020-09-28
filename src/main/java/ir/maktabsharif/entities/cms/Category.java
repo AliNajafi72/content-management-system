@@ -1,4 +1,4 @@
-package ir.maktabsharif.entities;
+package ir.maktabsharif.entities.cms;
 
 import javax.persistence.*;
 

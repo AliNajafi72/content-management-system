@@ -1,6 +1,6 @@
 package ir.maktabsharif.manager;
 
-import ir.maktabsharif.entities.Category;
+import ir.maktabsharif.entities.cms.Category;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

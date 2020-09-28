@@ -1,10 +1,8 @@
 package ir.maktabsharif.routes;
 
-import ir.maktabsharif.database_jdbc.UserDao;
-import ir.maktabsharif.entities.User;
+import ir.maktabsharif.entities.cms.User;
 import ir.maktabsharif.manager.UserManager;
 
-import java.sql.SQLException;
 import java.util.Optional;
 import java.util.Scanner;
 

@@ -1,9 +1,8 @@
 package ir.maktabsharif.routes;
 
 import ir.maktabsharif.database_jdbc.ArticleDao;
-import ir.maktabsharif.database_jdbc.CategoryDao;
-import ir.maktabsharif.entities.Article;
-import ir.maktabsharif.entities.Category;
+import ir.maktabsharif.entities.cms.Article;
+import ir.maktabsharif.entities.cms.Category;
 import ir.maktabsharif.manager.ArticleManager;
 import ir.maktabsharif.manager.CategoryManager;
 import ir.maktabsharif.models_jdbc.ArticleModel;

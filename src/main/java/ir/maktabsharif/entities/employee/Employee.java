@@ -1,9 +1,9 @@
-package ir.maktabsharif.entities;
+package ir.maktabsharif.entities.employee;
 
 import javax.persistence.*;
 
 @Entity
-@Table (name = "EMPLOYEE_PHONENUMBER")
+@Table (name = "employee_phonenumber", schema = "Employee")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
