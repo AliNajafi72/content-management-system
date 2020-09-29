@@ -20,6 +20,8 @@ public class User {
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn (name = "role_id")
     private UserRole userRole;
+    @Embedded
+    Address address;
 
     public long getId() {
         return id;
@@ -66,6 +68,14 @@ public class User {
 
     public void setUserRole(UserRole userRole) {
         this.userRole = userRole;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     @Override

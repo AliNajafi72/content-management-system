@@ -1,5 +1,6 @@
 package ir.maktabsharif.routes;
 
+import ir.maktabsharif.entities.cms.Address;
 import ir.maktabsharif.entities.cms.User;
 import ir.maktabsharif.manager.UserManager;
 
@@ -28,11 +29,22 @@ public class Register {
         Date birthDate = dateFormat.parse(birthDateString);
         System.out.println("Please enter password:");
         String password = stringValueScanner.nextLine();
+        System.out.println("Please enter city:");
+        String city = stringValueScanner.nextLine();
+        System.out.println("Please enter street:");
+        String street = stringValueScanner.nextLine();
+        System.out.println("Please enter zip code:");
+        String zipCode = stringValueScanner.nextLine();
+        Address address = new Address();
+        address.setCity(city);
+        address.setStreet(street);
+        address.setZipCode(zipCode);
         User user = new User();
         user.setUsername(username);
         user.setNationalCode(nationalCode);
         user.setBirthDate(birthDate);
         user.setPassword(password);
+        user.setAddress(address);
         // Using JDBC
 //        UserDao userDao = new UserDao();
 //        userDao.insert(user);
